@@ -1,0 +1,36 @@
+---
+import { Image } from "astro:assets";
+import me from "../img/me.png";
+import qrLink from "../img/qr_link.svg";
+import fourtyFactory from "../img/40factory.svg";
+---
+
+<p-slide class="two-columns">
+  <p-note class="text-cover my-data my-presentation">
+    <h5>Hello Folks!</h5>
+    <Image
+      src={me}
+      class="my-face"
+      alt="me"
+      style="--image-start-size: 6em"
+      class="alter-image-size"
+    />
+    <span>Marco Pollacci</span>
+    <span>Senior Frontend Developer</span>
+    <div role="generic">
+      <span>@</span>
+      <Image
+        src={fourtyFactory}
+        alt="40factory logo"
+        class="alter-image-size"
+        style="--image-start-size: .6em"
+      />
+    </div>
+  </p-note>
+  <Image
+    style="--image-start-size: 10.5em"
+    class="alter-image-size"
+    src={qrLink}
+    alt="qr"
+  />
+</p-slide>

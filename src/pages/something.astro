@@ -1,0 +1,15 @@
+---
+import Layout from "../layouts/Layout.astro";
+import CoverSomething from "../slides/cover-something.astro";
+import Cover from "../slides/cover.astro";
+import Thanks from "../slides/thanks.astro";
+const canRender = new Date("2025-01-01") < new Date();
+---
+
+<Layout canRender={canRender}>
+  <CoverSomething />
+  {canRender && (
+    <Cover />
+    <Thanks />
+  )}
+</Layout>
