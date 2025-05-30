@@ -11,9 +11,14 @@ import Outro from '../slides/outro.astro';
 import ReadingWriting from '../slides/reading-writing.astro';
 import Thanks from "../slides/thanks.astro";
 const canRender = new Date("2025-01-01") < new Date();
+const favIcon = 'favicon.svg'
+const metaData = {
+  title: 'Designing for Cultural Inclusion',
+  description: 'CSS and Accessibility as Key Tools'
+}
 ---
 
-<Layout canRender={canRender}>
+<Layout canRender={canRender} favIcon={favIcon} metaData={metaData}>
   <CoverReggioEmiliaFullStack2025 />
   {canRender && (
     <Cover />
