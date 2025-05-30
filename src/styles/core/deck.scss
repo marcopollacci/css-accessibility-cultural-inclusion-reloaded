@@ -6,6 +6,7 @@ p-deck {
   }
 
   &[mode="speaker"] {
+    background-color: #6a6969;
     p-slide:not([active]) {
       transform: scale(calc(1 - var(--speaker-next-scale)));
       top: calc(var(--speaker-next-scale) * -50%);

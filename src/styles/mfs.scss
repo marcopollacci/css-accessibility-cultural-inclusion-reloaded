@@ -1,0 +1,189 @@
+.button-danger {
+  background-color: #ff0000;
+  text-align: center;
+  color: white;
+  font-size: 0.5em;
+  border-radius: 1rem;
+  padding: 0.5rem;
+  display: block;
+  margin-block-end: 1em;
+}
+
+.grid-example {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: center;
+  text-align: center;
+  border: 1px solid #ffffff;
+  margin-block-end: 1em;
+  span {
+    --background-color: #000000;
+    border: 1px solid #ffffff;
+    padding: 0.4em;
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: var(--background-color);
+  }
+}
+
+.flag-attribute {
+  position: relative;
+  &:after {
+    --color-border-flag: #ffffff;
+    content: attr(data-flag);
+    position: absolute;
+    inset-inline-end: 0.011rem;
+    z-index: -1;
+    color: transparent;
+    text-shadow: 0 0 1px var(--color-border-flag),
+      -1px -1px 1px var(--color-border-flag),
+      -1px 1px 1px var(--color-border-flag),
+      1px 1px 1px var(--color-border-flag),
+      1px -1px 1px var(--color-border-flag);
+  }
+}
+
+.example-inclusion {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: center;
+  text-align: center;
+  row-gap: 1em;
+  div {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+.example-inclusion-2 {
+  position: relative;
+  p-fragment > span {
+    position: absolute;
+    inset-block-end: 1em;
+    inset-inline-start: 3.7em;
+    font-size: 3em;
+  }
+  .flex {
+    div {
+      display: flex;
+      flex-direction: row;
+      &[dir="rtl"] span {
+        &[style*="margin-inline-end"] {
+          border-color: #008000;
+        }
+      }
+      span {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 0.8em;
+        border: 2px solid #ffffff;
+        width: 100%;
+      }
+    }
+  }
+  p:first-of-type {
+    margin-block-start: 1em;
+  }
+}
+
+p-fragment.visibility-none {
+  &[aria-hidden="true"] {
+    visibility: hidden;
+  }
+}
+
+img[alt="lightning talk"] {
+  opacity: 1;
+  animation: flicker 4s linear reverse infinite;
+}
+
+p-fragment:has(span[data-typing])[aria-hidden="false"] span[data-typing] {
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+  margin: 0 auto;
+  align-items: center;
+  width: 0;
+  animation: typing 3.5s steps(40, end) forwards;
+}
+
+a,
+a:visited {
+  color: #ffffff;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: #ffffff;
+  }
+}
+
+@keyframes flicker {
+  0% {
+    opacity: 0.4;
+  }
+  5% {
+    opacity: 0.5;
+  }
+  10% {
+    opacity: 0.6;
+  }
+  15% {
+    opacity: 0.85;
+  }
+  25% {
+    opacity: 0.5;
+  }
+  30% {
+    opacity: 1;
+  }
+  35% {
+    opacity: 0.1;
+  }
+  40% {
+    opacity: 0.25;
+  }
+  45% {
+    opacity: 0.5;
+  }
+  60% {
+    opacity: 1;
+  }
+  70% {
+    opacity: 0.85;
+  }
+  80% {
+    opacity: 0.4;
+  }
+  90% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+a:visited {
+  color: #fff;
+}
+
+.custom-text-size {
+  --custom-text-size: 1em;
+  font-size: var(--custom-text-size);
+}

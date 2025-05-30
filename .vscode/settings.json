@@ -1,3 +1,23 @@
 {
-  "conventionalCommits.scopes": ["project"]
+  "conventionalCommits.scopes": ["project"],
+  "workbench.colorCustomizations": {
+    "activityBar.activeBackground": "#3144b3",
+    "activityBar.background": "#3144b3",
+    "activityBar.foreground": "#e7e7e7",
+    "activityBar.inactiveForeground": "#e7e7e799",
+    "activityBarBadge.background": "#320e13",
+    "activityBarBadge.foreground": "#e7e7e7",
+    "commandCenter.border": "#e7e7e799",
+    "sash.hoverBorder": "#3144b3",
+    "statusBar.background": "#26358b",
+    "statusBar.foreground": "#e7e7e7",
+    "statusBarItem.hoverBackground": "#3144b3",
+    "statusBarItem.remoteBackground": "#26358b",
+    "statusBarItem.remoteForeground": "#e7e7e7",
+    "titleBar.activeBackground": "#26358b",
+    "titleBar.activeForeground": "#e7e7e7",
+    "titleBar.inactiveBackground": "#26358b99",
+    "titleBar.inactiveForeground": "#e7e7e799"
+  },
+  "peacock.color": "#26358B"
 }

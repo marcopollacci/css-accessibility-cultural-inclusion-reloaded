@@ -1,0 +1,43 @@
+---
+import PNotes from "../components/PNotes.astro";
+---
+
+<p-slide class="cover-internal center" autoplay timer="300">
+  <h4 style="margin-block-end: 0.5em">Colors based on the user's language</h4>
+  <p-fragment
+    ><h5 style="margin-block-start: 0.5em">
+      with CSS Variables <span style="-webkit-text-fill-color: initial">🎨</span
+      >
+    </h5></p-fragment
+  >
+  <PNotes>
+    <p>
+      🎨 CSS variables allow dynamic adaptations based on the user's language,
+      region, or preferences.
+    </p>
+    <p>
+      📌 In some East Asian cultures, white is associated with mourning, so
+      adjusting colors improves user experience.
+    </p>
+  </PNotes>
+</p-slide>
+<p-slide>
+  <h4 style="margin-block-end: 0.5em" class="center">Let&#39;s Code 👨‍💻</h4>
+  <pre
+    class="small-line"
+    data-label-file="variable.css">
+ <code is:raw style="font-size: .8em" class="language-scss"> 
+    :root {
+        --background-color: #FFFFFF; /* Neutral white, default color */
+    }
+
+    [lang="zh"] { /* Chinese */
+        --background-color: #ff5151; /* Blue tone for Chinese, avoiding white */
+    }
+
+    body {
+        background-color: var(--background-color);
+    }
+  </code>
+</pre>
+</p-slide>

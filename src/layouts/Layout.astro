@@ -2,6 +2,7 @@
 import "p-slides/css/p-slides.css";
 import "../styles/main.scss";
 import "../styles/presentation.scss";
+import "../styles/mfs.scss";
 import SpeakerMode from "../components/SpeakerMode.astro";
 import { Image } from "astro:assets";
 import { Font } from "astro:assets";
@@ -20,11 +21,11 @@ const bodyAttributes = canRender ? undefined : "coming-soon";
     <Font cssVariable="--talk-marco-graphik-regular" />
     <Font cssVariable="--talk-marco-graphik-medium" />
     <link href="/css/prism-one-light.css" rel="stylesheet" />
-    <meta name="description" content="Talk di Marco Pollacci" />
+    <meta name="description" content="CSS and Accessibility as Key Tools" />
 
-    <meta property="og:title" content="Something" />
+    <meta property="og:title" content="Designing for Cultural Inclusion" />
     <meta name="generator" content={Astro.generator} />
-    <title>Something</title>
+    <title>Designing for Cultural Inclusion</title>
   </head>
   <body coming-soon={bodyAttributes}>
     <p-deck>

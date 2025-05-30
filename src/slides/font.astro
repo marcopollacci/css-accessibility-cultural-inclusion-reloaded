@@ -1,0 +1,120 @@
+---
+import { Image } from "astro:assets";
+import noRead from "../img/no-read.png";
+import fallOut from "../img/fallout-ok-guys.png";
+import padreMaronno from "../img/padre_maronno.jpg";
+import PNotes from "../components/PNotes.astro";
+---
+
+<p-slide class="cover-internal">
+  <h1 style="text-align: start">multilingual fonts</h1>
+  <h5 style="text-align: start; margin-block-start: 0" class="no-replace-font">
+    مرحبًا! 你好! Hello! Bonjour! नमस्ते!
+  </h5>
+</p-slide>
+<p-slide class="medium-text" autoplay timing="500" timing-fragment="700">
+  <p class="cover-internal-sub-section-all center">
+    There are fonts that ensure compatibility with various glyphs characters (
+    ദ്ദി ˙ᗜ˙ )
+  </p>
+  <div
+    style="display: flex"
+    style="margin-block-start: 1em"
+    class="flex two-columns-flex-start"
+  >
+    <p-fragment><p>📍 Noto Fonts</p></p-fragment>
+    <p-fragment><p>📍 Arial Unicode MS</p></p-fragment>
+    <p-fragment><p>📍 DejaVu Fonts</p></p-fragment>
+    <p-fragment><p>📍 Roboto</p></p-fragment>
+    <p-fragment><p>📍 Code2000</p></p-fragment>
+  </div>
+  <p-fragment
+    ><p
+      style="text-align: end; margin-block-start: 1em; margin-inline-end: 2em"
+    >
+      🚀 Ecc...
+    </p></p-fragment
+  >
+  <PNotes>
+    <ul style="font-size: 0.7em">
+      <li>
+        1. Noto Fonts (Google Noto) Description: Noto is a font family developed
+        by Google to cover all the languages of the world. The name "Noto" comes
+        from "No Tofu", referring to the goal of eliminating the square
+        characters (tofu) that appear when a font does not support a certain
+        character. Examples: Noto Sans, Noto Serif, Noto Mono.
+      </li>
+      <li>
+        2. Arial Unicode MS Description: Arial Unicode MS is an extended version
+        of the popular Arial font, designed to include a wide range of Unicode
+        characters. Common use: Multilingual documents, especially in corporate
+        environments.
+      </li>
+      <li>
+        3. DejaVu Fonts Description: DejaVu is an open-source font family that
+        extends the Bitstream Vera font, adding support for a wide range of
+        Unicode characters. Examples: DejaVu Sans, DejaVu Serif, DejaVu Sans
+        Mono.
+      </li>
+      <li>
+        4. Code2000 Description: Code2000 is a shareware font designed to
+        support as many Unicode characters as possible. Common use: Linguistic
+        research, technical documentation.
+      </li>
+    </ul>
+  </PNotes>
+</p-slide>
+<p-slide autoplay timing="600" timing-fragment="700" class="center">
+  <h4 class="cover-all" style="margin-block-end: 0.5em">
+    And if I can't use a multilingual font?
+  </h4>
+  <p-fragment
+    ><Image
+      src={padreMaronno}
+      alt="padre maronno"
+      class="alter-image-size"
+    /></p-fragment
+  >
+</p-slide>
+<p-slide>
+  <Image src={noRead} alt="no-read" class="alter-image-size" />
+</p-slide>
+<p-slide autoplay timing="500" timing-fragment="700" class="center">
+  <h4 style="margin-block-end: 1em" class="cover-all">
+    By default, browsers seamlessly switch to system fonts
+  </h4>
+  <p-fragment
+    ><Image
+      style="--image-start-size: 5em"
+      src={fallOut}
+      alt="fallout ok guys"
+      class="alter-image-size"
+    /></p-fragment
+  >
+</p-slide>
+<p-slide class="center">
+  <h1 class="cover-all">BUT</h1>
+</p-slide>
+<p-slide class="cover">
+  <h1 style="margin-block-end: 0">Still a different font!</h1>
+  <h1>•︵•</h1>
+</p-slide>
+<p-slide>
+  <h5 style="margin-block-end: 0.5em">
+    ⚠️ It's important to manage the font according to the language ⚠️
+  </h5>
+  <pre
+    class="small-line"
+    data-label-file="font.css">
+    <code is:raw style="font-size: 0.8em" class="language-scss"> 
+    body {
+      font-family: 'Lobster' // only Latin Font
+    }</code>
+    <p-fragment><code is:raw style="font-size: 0.8em;padding-inline-start: 0;" class="language-scss">
+    body:lang(ar) {
+      font-family: Noto Sans Arabic, sans-serif;
+    }</code>
+    </p-fragment>
+    </pre>
+</p-slide>
+<script src="../js/fonts.js"></script>

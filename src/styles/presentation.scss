@@ -46,15 +46,15 @@
 
 :root {
   font-family: var(--talk-marco-graphik-regular);
-  --slide-bg: white;
+  --current-slide-bg: #000000;
   --sliding-duration: 0ms;
   --fragment-duration: 300ms;
   --brand-color: #822a7c;
   --brand-color-ant: #f60;
   --sketchy-arrow-width: 0.1em;
   --sketchy-arrow-tip-size: 20;
-  --starting-point-gradient: #fafafa;
-  --ending-point-gradient: #000000;
+  --starting-point-gradient: #4a69eb;
+  --ending-point-gradient: #fff;
 }
 
 p-deck::after {
@@ -277,10 +277,6 @@ pre {
   }
 }
 
-.cover-internal-sub-section-all {
-  @extend .current-gradient-sub-section;
-}
-
 .cover-subSection {
   @extend .cover;
 
@@ -496,11 +492,11 @@ a {
 }
 
 .text-cover {
-  @include mixins.gradientText(#000, #a0a0a0);
+  @include mixins.gradientText(#4a69eb, #fafafa);
 }
 
 .text-sub-section {
-  color: #484848;
+  color: #eeeded;
 }
 
 .special-file {
@@ -513,6 +509,7 @@ a {
 
 p-slide {
   background-color: var(--current-slide-bg, #ffffff);
+  color: #ffffff;
   .group-fragment[aria-hidden="false"] {
     display: none;
     &:last-child {
@@ -660,4 +657,41 @@ body[coming-soon] .coming-soon {
   left: 50%;
   transform: translate(-50%, -50%);
   max-width: 100%;
+}
+
+.current-gradient-sub-section {
+  --starting-point-gradient: #fafafa;
+  --ending-point-gradient: #000000;
+  @include mixins.gradientText(
+    var(--starting-point-gradient),
+    var(--ending-point-gradient)
+  );
+}
+
+.cover-internal-sub-section {
+  --text-align: center;
+  @extend .cover;
+  @for $i from 1 through 6 {
+    h#{$i} {
+      text-align: var(--text-align);
+      @extend .current-gradient-sub-section;
+    }
+  }
+}
+
+.cover-internal-sub-section-all {
+  --ending-point-gradient: #848383;
+  @extend .current-gradient-sub-section;
+}
+
+.cover-all {
+  --starting-point-gradient: #4a69eb;
+  --ending-point-gradient: #fafafa;
+  @extend .current-gradient-sub-section;
+}
+
+.cover-red-all {
+  --starting-point-gradient: #eb4a4a;
+  --ending-point-gradient: #ffb6b6;
+  @extend .current-gradient-sub-section;
 }

@@ -1,0 +1,58 @@
+---
+import PNotes from "../components/PNotes.astro";
+---
+
+<p-slide class="cover-internal">
+  <h3 style="margin-block-end: 0.5em">Reading and Writing</h3>
+  <p-fragment style="min-height: 2em">
+    <span dir="rtl" data-typing>من اليمين إلى اليسار</span>
+  </p-fragment>
+  <p-fragment>
+    <span
+      style="--circle-sketch-height: 2.3em;position: absolute;inset-block-end: 8.7em;width: 9em;inset-inline-start: 8.5em"
+      class="circle-sketch-highlight"></span>
+    <p class="small-text" style="margin-block-start: 3em; font-style: italic">
+      (it says <span
+        style="--starting-point-gradient: #899df1; --ending-point-gradient: #899df1"
+        class="cover-all">from right to left</span
+      >, just like the text is meant to be read in Arabic 👀)
+    </p>
+  </p-fragment>
+  <PNotes>
+    <p>
+      The phonetic transliteration of the phrase من اليمين إلى اليسار is: min
+      al-yamīn ilà al-yasār
+    </p>
+  </PNotes>
+</p-slide>
+<p-slide class="example-inclusion-2">
+  <h3>
+    ↔️ <span class="cover-internal-sub-section-all" is:raw>LTR <--> RTL</span>
+  </h3>
+  <div
+    style="display:flex;"
+    class="flex two-columns-divided-vertically mid-dimension"
+  >
+    <p-fragment
+      ><div>
+        <span style="margin-inline-end: 1em">(˶ᵔ ᵕ ᵔ˶)</span>Lorem ipsum, dolor
+        sit amet consectetur adipisicing elit.
+      </div></p-fragment
+    >
+    <p-fragment
+      ><div style="line-height: 2.8rem" dir="rtl">
+        <span style="margin-right: 1em">( • ᴖ • ｡)</span>لوريم إيبسوم هو ببساطة
+        نص شكلي بمعنى أن الغاية هي الشكل وليس
+      </div></p-fragment
+    >
+  </div>
+  <p-fragment border-red class="trigger"
+    ><p style="color: #ff0000" class="center" is:raw>
+      ---> margin-right <---
+    </p></p-fragment
+  >
+  <p-fragment><span>❌</span></p-fragment>
+  <p-fragment><p class="center">✅ margin-inline-end ✅</p></p-fragment>
+  <p-fragment class="trigger"></p-fragment>
+</p-slide>
+<script src="../js/intro.js"></script>
