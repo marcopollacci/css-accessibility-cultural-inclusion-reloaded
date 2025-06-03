@@ -1,5 +1,5 @@
 {
-  "conventionalCommits.scopes": ["project"],
+  "conventionalCommits.scopes": ["project", "reading-writing"],
   "workbench.colorCustomizations": {
     "activityBar.activeBackground": "#3144b3",
     "activityBar.background": "#3144b3",
