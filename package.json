@@ -9,12 +9,12 @@
     "astro": "astro"
   },
   "dependencies": {
-    "astro": "^5.8.1",
+    "astro": "^5.9.2",
     "p-slides": "^1.1.0"
   },
   "devDependencies": {
-    "@types/node": "^22.15.29",
-    "sass": "^1.89.1",
+    "@types/node": "^24.0.0",
+    "sass": "^1.89.2",
     "sharp": "^0.34.2",
     "vite-plugin-static-copy": "^3.0.0"
   }
