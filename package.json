@@ -4,6 +4,7 @@
   "version": "0.0.1",
   "scripts": {
     "dev:reggio-emilia-full-stack-2025": "astro dev --open '/reggio-emilia-full-stack-2025/'",
+    "dev:green-software-italia-2025": "astro dev --open '/green-software-italia-2025/'",
     "build": "astro build",
     "preview": "astro preview",
     "astro": "astro"

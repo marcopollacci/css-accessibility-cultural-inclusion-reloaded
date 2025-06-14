@@ -1,5 +1,10 @@
 {
-  "conventionalCommits.scopes": ["project", "reading-writing"],
+  "conventionalCommits.scopes": [
+    "project",
+    "reading-writing",
+    "green software italia",
+    "reggio emilia fullstack"
+  ],
   "workbench.colorCustomizations": {
     "activityBar.activeBackground": "#3144b3",
     "activityBar.background": "#3144b3",
