@@ -7,9 +7,11 @@ import CssVariables from '../slides/css-variables.astro';
 import Font from '../slides/font.astro';
 import Implementations from '../slides/implementations.astro';
 import Intro from '../slides/intro.astro';
+import OtherWriting from '../slides/other-writing.astro';
 import Outro from '../slides/outro.astro';
 import ReadingWriting from '../slides/reading-writing.astro';
 import Thanks from "../slides/thanks.astro";
+import UserPreferences from '../slides/user-preferences.astro';
 const canRender = import.meta.env.DEV || new Date("2025-06-19") < new Date();
 const favIcon = 'favicon.svg'
 const metaData = {
@@ -24,8 +26,10 @@ const metaData = {
     <Cover />
     <Intro />
     <CssVariables />
+    <UserPreferences />
     <ReadingWriting />
     <Implementations />
+    <OtherWriting />
     <Font />
     <Outro />
     <Thanks />
