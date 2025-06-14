@@ -1,4 +1,54 @@
+---
+import PNotes from "../components/PNotes.astro";
+---
+
 <p-slide class="cover-internal">
   <h3 style="margin-block-end: 0.5em">Users preferences</h3>
   🎨
+</p-slide>
+<p-slide class="cover-internal">
+  <h3>Besides culture, user preferences matter too.</h3>
+  <p-fragment
+    ><h4 class="cover-red-all">
+      What are they? What do they mean?
+    </h4></p-fragment
+  >
+  <PNotes>
+    CSS media queries can help respect and adapt to user preferences that may
+    also carry cultural significance
+  </PNotes>
+</p-slide>
+<p-slide>
+  <ul data-coding style="margin-block-end: 0.3em;">
+    <li><code>prefers-color-scheme 🎨</code></li>
+    <p-fragment><li><code>prefers-reduced-motion 🏃🏻‍♀️</code></li></p-fragment>
+    <p-fragment><li><code>forced-color 👨🏻‍🎨</code></li></p-fragment>
+    <p-fragment
+      ><span style="text-align: end;
+    width: 100%;
+    display: block;"
+        >(⸝⸝&gt; ᴗ•⸝⸝)</span
+      ></p-fragment
+    >
+  </ul>
+  <PNotes>
+    <ul style="font-size: 0.7em">
+      <li>
+        <b>prefers-color-scheme:</b>In cultures where white is associated with
+        mourning (e.g., some Asian countries), dark mode might be perceived as
+        more neutral or respectful. Can also reflect environmental or religious
+        needs (e.g., avoiding light during nighttime prayers like during
+        Ramadan).
+      </li>
+      <li>
+        <b>prefers-reduced-motion:</b> Also useful in cultures less prone to visual
+        spectacle (e.g., professional or institutional contexts in some Nordic or
+        Asian countries).
+      </li>
+      <li>
+        <b>forced-color:</b> Useful for users who need strong color contrast, or
+        for cultural/religious reasons (e.g., avoiding red or certain color combinations).
+      </li>
+    </ul>
+  </PNotes>
 </p-slide>

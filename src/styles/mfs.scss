@@ -187,3 +187,13 @@ a:visited {
   --custom-text-size: 1em;
   font-size: var(--custom-text-size);
 }
+
+ul[data-coding] {
+  li {
+    height: 2.8em;
+    code {
+      background-color: rgb(169 174 196 / 58%);
+      padding: 0.4rem 0.8rem;
+    }
+  }
+}

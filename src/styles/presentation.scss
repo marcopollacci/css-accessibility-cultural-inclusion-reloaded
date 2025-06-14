@@ -243,6 +243,17 @@ pre {
   figure {
     margin: 0;
   }
+
+  img {
+    height: 4em;
+  }
+
+  > img {
+    filter: invert(1) hue-rotate(180deg);
+    height: 200%;
+    transform: translate(25%, -10%);
+    opacity: 0.5;
+  }
 }
 
 .cover-internal {
