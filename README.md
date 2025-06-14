@@ -14,9 +14,7 @@ Built on top of [P-Slides](https://github.com/MaxArt2501/p-slides)!
 
 - [28/03/2025 - CSS Day 2025](https://css-accessibility-cultural-inclusion.pages.dev/css-day-2025/)
 
-## Other Talks
-
-- [19/06/2025 - Green Software Italia](https://css-accessibility-cultural-inclusion.pages.dev/green-software-italia-2025/)
+- [19/06/2025 - Green Software Italia](https://css-accessibility-cultural-inclusion-v2.pages.dev/green-software-italia-2025/)
 
 ## Building
 
