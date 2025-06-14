@@ -12,8 +12,9 @@ import Outro from '../slides/outro.astro';
 import ReadingWriting from '../slides/reading-writing.astro';
 import Thanks from "../slides/thanks.astro";
 import UserPreferences from '../slides/user-preferences.astro';
+import gsi from "../img/gsi.png";
 const canRender = import.meta.env.DEV || new Date("2025-06-19") < new Date();
-const favIcon = 'favicon.svg'
+const favIcon = gsi.src
 const metaData = {
   title: 'Designing for Cultural Inclusion',
   description: 'CSS and Accessibility as Key Tools'
@@ -26,11 +27,11 @@ const metaData = {
     <Cover />
     <Intro />
     <CssVariables />
-    <UserPreferences />
     <ReadingWriting />
     <Implementations />
     <OtherWriting />
     <Font />
+    <UserPreferences />
     <Outro />
     <Thanks />
   )}

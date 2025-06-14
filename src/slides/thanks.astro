@@ -2,6 +2,8 @@
 import { Image } from "astro:assets";
 import me from "../img/me.png";
 import fourtyFactory from "../img/40factory.svg";
+import qrLink from "../img/qrcode_slide_gsi.png";
+import qrLinkSlide from "../img/qrcode_slide_gsi.png";
 ---
 
 <p-slide>
@@ -14,11 +16,15 @@ import fourtyFactory from "../img/40factory.svg";
 </p-slide>
 <p-slide class="center">
   <h2 style="margin-block-end: 0.3em">You can see this slide on</h2>
-  <p-note class="to-do" style="margin-block-end: 0.5em">
-    <!-- <img src="/img/qrcode.png" alt="qrcode" class="alter-image-size" />  -->
-    adding qr image!
+  <p-note style="margin-block-end: 0.5em">
+    <Image src={qrLink} alt="qrcode slide" class="alter-image-size" />
   </p-note>
-  <p-note class="to-do"><a href="">adding link</a></p-note>
+  <p-note
+    ><a
+      href="https://css-accessibility-cultural-inclusion-v2.pages.dev/green-software-italia-2025/"
+      >https://css-accessibility-cultural-inclusion-v2.pages.dev/green-software-italia-2025/</a
+    ></p-note
+  >
 </p-slide>
 <p-slide class="two-columns">
   <p-note class="text-cover my-data my-presentation">
@@ -45,7 +51,6 @@ import fourtyFactory from "../img/40factory.svg";
   </p-note>
   <p-note class="text-cover my-data my-presentation">
     <h5>Leave some feedback</h5>
-    <span class="to-do">adding qr image!</span>
-    <!-- <img style="--image-start-size: 10.3em" class="alter-image-size" src="/img/qr_link.svg" alt="qr" /> -->
+    <Image src={qrLinkSlide} alt="qrcode slide" class="alter-image-size" />
   </p-note>
 </p-slide>
