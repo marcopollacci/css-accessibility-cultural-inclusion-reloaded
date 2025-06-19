@@ -8,7 +8,7 @@
     "build": "astro build",
     "preview": "astro preview",
     "astro": "astro",
-    "astro:enable-toolbar": "astro preferences enale devToolbar",
+    "astro:enable-toolbar": "astro preferences enable devToolbar",
     "astro:disable-toolbar": "astro preferences disable devToolbar"
   },
   "dependencies": {
