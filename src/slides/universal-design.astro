@@ -1,6 +1,7 @@
 ---
 import { Image } from "astro:assets";
 import boldOpinionLogo from "../img/bold_opinion.jpeg";
+import weekendBlindingLights from "../img/the-weeknd-blinding-lights.jpg";
 ---
 
 <p-slide class="center">
@@ -16,4 +17,15 @@ import boldOpinionLogo from "../img/bold_opinion.jpeg";
       style="--image-start-size: 4em"
     />
   </p-fragment>
+</p-slide>
+<p-slide autoplay class="cover-internal">
+  <h1>Universal Design</h1>
+  <p-fragment
+    ><Image
+      src={weekendBlindingLights}
+      alt="the weekend blinding lights"
+      class="alter-image-size"
+      style="--image-start-size: 6em"
+    /></p-fragment
+  >
 </p-slide>
