@@ -11,6 +11,9 @@ import Outro from '../slides/outro.astro';
 import ReadingWriting from '../slides/reading-writing.astro';
 import Thanks from "../slides/thanks.astro";
 import qrLink from "../img/qrcode_slide_refs.png";
+import OtherWriting from '../slides/other-writing.astro';
+import UserPreferences from '../slides/user-preferences.astro';
+import UniversalDesign from '../slides/universal-design.astro';
 const canRender = import.meta.env.DEV || new Date("2030-01-01") < new Date();
 const favIcon = 'favicon.svg'
 const metaData = {
@@ -27,7 +30,10 @@ const metaData = {
     <CssVariables />
     <ReadingWriting />
     <Implementations />
+    <OtherWriting />
     <Font />
+    <UniversalDesign />
+    <UserPreferences />
     <Outro />
     <Thanks qrLink={qrLink} urlLink="https://css-accessibility-cultural-inclusion-v2.pages.dev/reggio-emilia-full-stack-2025/" />
   )}

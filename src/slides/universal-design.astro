@@ -1,0 +1,19 @@
+---
+import { Image } from "astro:assets";
+import boldOpinionLogo from "../img/bold_opinion.jpeg";
+---
+
+<p-slide class="center">
+  <h1 style="margin-block-end: 1rem;">
+    🚨 <span class="cover-all">ALERT!</span> 🚨
+  </h1>
+  <p-fragment
+    ><h3 class="cover-all" style="margin-block: 1rem;">Bold opinion here!</h3>
+    <Image
+      src={boldOpinionLogo}
+      alt="bold opinion logo"
+      class="alter-image-size"
+      style="--image-start-size: 4em"
+    />
+  </p-fragment>
+</p-slide>
