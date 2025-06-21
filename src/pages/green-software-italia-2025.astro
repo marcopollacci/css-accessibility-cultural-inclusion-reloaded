@@ -13,6 +13,9 @@ import ReadingWriting from '../slides/reading-writing.astro';
 import Thanks from "../slides/thanks.astro";
 import UserPreferences from '../slides/user-preferences.astro';
 import gsi from "../img/gsi.png";
+import qrLink from "../img/qrcode_slide_gsi.png";
+import qrLinkRating from "../img/qrcode_rating_gsi.png";
+
 const canRender = import.meta.env.DEV || new Date("2025-06-19") < new Date();
 const favIcon = gsi.src
 const metaData = {
@@ -33,6 +36,6 @@ const metaData = {
     <Font />
     <UserPreferences />
     <Outro />
-    <Thanks />
+    <Thanks qrLink={qrLink} qrLinkRating={qrLinkRating} urlLink="https://css-accessibility-cultural-inclusion-v2.pages.dev/green-software-italia-2025/" />
   )}
 </Layout>
