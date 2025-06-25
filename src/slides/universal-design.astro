@@ -2,6 +2,7 @@
 import { Image } from "astro:assets";
 import boldOpinionLogo from "../img/bold_opinion.jpeg";
 import weekendBlindingLights from "../img/the-weeknd-blinding-lights.jpg";
+import PNotes from "../components/PNotes.astro";
 ---
 
 <p-slide class="center">
@@ -28,4 +29,82 @@ import weekendBlindingLights from "../img/the-weeknd-blinding-lights.jpg";
       style="--image-start-size: 6em"
     /></p-fragment
   >
+</p-slide>
+<p-slide class="center">
+  <h3>What is Universal Design? 🤔</h3>
+  <p-fragment
+    ><h4 class="cover-all">
+      The main goal is to create a single solution that works for everyone
+    </h4></p-fragment
+  >
+  <PNotes>
+    <p>
+      - It originates from architecture with the goal of creating environments
+      and products usable by all people, to the greatest extent possible,
+      without the need for adaptation or specialized design
+    </p>
+    <p>
+      - On the web, it inspired the core principles of WCAG: a site with good
+      contrast and semantic markup is "universally" more accessible to people
+      with low vision and screen reader users.
+    </p>
+  </PNotes>
+</p-slide>
+<p-slide class="center">
+  <h3>The Illusion of the <span class="cover-all">"Universal" User</span></h3>
+  <h4 p-fragment>Some examples 👉</h4>
+  <PNotes>
+    The concept of "everyone" is an abstraction. In the digital world, the
+    "universal" user often aligns with a specific profile: Western, accustomed
+    to certain technological conventions, and possessing a particular mental
+    model.
+  </PNotes>
+</p-slide>
+<p-slide>
+  <ul>
+    <li>
+      <span style="font-size: 5rem"
+        >📌 Iconography: <span p-fragment>💾</span></span
+      >
+      <p p-fragment style="margin-block-start: 2rem;font-size: 3rem">
+        The 'save' icon is not universal, <span class="cover-all"
+          >it's generational</span
+        >
+      </p>
+    </li>
+    <li style="margin-block-start: 2rem;" p-fragment>
+      <span style="font-size: 5rem"
+        >📌 Workflows: <span p-fragment>🛠️</span></span
+      >
+      <p p-fragment style="margin-block-start: 2rem;font-size: 3rem">
+        A <span class="cover-all">"universal" checkout process</span> that prioritizes
+        credit cards fails in contexts where other methods are the norm
+      </p>
+    </li>
+  </ul>
+</p-slide>
+<p-slide class="cover-internal">
+  <h1 style="margin-block-end: 2rem;">How can we do better?</h1>
+  <span p-fragment>∘ ∘ ∘ ( °ヮ° ) ?</span>
+</p-slide>
+<p-slide class="center">
+  <h3 style="margin: 0">🥁 Welcome to 🥁</h3>
+  <h3 p-fragment class="cover-all">Plural Design: The Adaptive Approach</h3>
+</p-slide>
+<p-slide>
+  <p>- Don't look for ONE solution for everyone</p>
+  <p p-fragment>
+    - Create a <span class="cover-all">flexible system</span> that recognizes diverse
+    mental models and presents the most appropriate solution
+  </p>
+</p-slide>
+<p-slide class="center">
+  <h3 class="cover-all" style="margin-block: 1rem;">End Bold opinion</h3>
+  <Image
+    src={boldOpinionLogo}
+    alt="bold opinion logo"
+    class="alter-image-size"
+    style="--image-start-size: 4em"
+  />
+  <h2 class="cover-all" style="margin-block-start: 2rem;">ദ്ദി ˉ͈̀꒳ˉ͈́ )✧</h2>
 </p-slide>
