@@ -15,6 +15,7 @@ import OtherWriting from '../slides/other-writing.astro';
 import UserPreferences from '../slides/user-preferences.astro';
 import UniversalDesign from '../slides/universal-design.astro';
 import refsFav from '../img/refs_fav.svg';
+import qrLinkRating from "../img/qrcode_rating_rfs.png";
 const canRender = import.meta.env.DEV || new Date("2025-07-15") < new Date();
 const favIcon = refsFav.src;
 const metaData = {
@@ -36,6 +37,6 @@ const metaData = {
     <UniversalDesign />
     <UserPreferences />
     <Outro />
-    <Thanks qrLink={qrLink} urlLink="https://css-accessibility-cultural-inclusion-v2.pages.dev/reggio-emilia-full-stack-2025/" />
+    <Thanks qrLink={qrLink} qrLinkRating={qrLinkRating} urlLink="https://css-accessibility-cultural-inclusion-v2.pages.dev/reggio-emilia-full-stack-2025/" />
   )}
 </Layout>
