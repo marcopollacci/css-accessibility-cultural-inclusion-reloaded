@@ -2,6 +2,7 @@
 import { Image } from "astro:assets";
 import boldOpinionLogo from "../img/bold_opinion.jpeg";
 import weekendBlindingLights from "../img/the-weeknd-blinding-lights.jpg";
+import allTheSame from "../img/all-the-same.jpg";
 import PNotes from "../components/PNotes.astro";
 ---
 
@@ -50,9 +51,16 @@ import PNotes from "../components/PNotes.astro";
     </p>
   </PNotes>
 </p-slide>
-<p-slide class="center">
+<p-slide class="center" autoplay>
   <h3>The Illusion of the <span class="cover-all">"Universal" User</span></h3>
-  <h4 p-fragment>Some examples 👉</h4>
+  <p-fragment
+    ><Image
+      style="border-radius: 1rem"
+      src={allTheSame}
+      alt="illusion landscape"
+      class="alter-image-size"
+    />
+  </p-fragment>
   <PNotes>
     The concept of "everyone" is an abstraction. In the digital world, the
     "universal" user often aligns with a specific profile: Western, accustomed
@@ -87,9 +95,11 @@ import PNotes from "../components/PNotes.astro";
   <h1 style="margin-block-end: 2rem;">How can we do better?</h1>
   <span p-fragment>∘ ∘ ∘ ( °ヮ° ) ?</span>
 </p-slide>
-<p-slide class="center">
+<p-slide class="center" autoplay>
   <h3 style="margin: 0">🥁 Welcome to 🥁</h3>
-  <h3 p-fragment class="cover-all">Plural Design: The Adaptive Approach</h3>
+  <p-fragment style="margin-block-start: 4rem;"
+    ><h3 class="cover-all">Plural Design: The Adaptive Approach</h3></p-fragment
+  >
 </p-slide>
 <p-slide>
   <p>- Don't look for ONE solution for everyone</p>
