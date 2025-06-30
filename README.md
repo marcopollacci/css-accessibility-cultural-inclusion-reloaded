@@ -16,6 +16,8 @@ Built on top of [P-Slides](https://github.com/MaxArt2501/p-slides)!
 
 - [19/06/2025 - Green Software Italia](https://css-accessibility-cultural-inclusion-v2.pages.dev/green-software-italia-2025/)
 
+- [15/07/2025 - Reggio Emilia Full Stack](https://css-accessibility-cultural-inclusion-v2.pages.dev/reggio-emilia-full-stack-2025/)
+
 ## Building
 
 Node.js >= 20.x is required.
