@@ -3,6 +3,7 @@ import { Image } from "astro:assets";
 import boldOpinionLogo from "../img/bold_opinion.jpeg";
 import weekendBlindingLights from "../img/the-weeknd-blinding-lights.jpg";
 import allTheSame from "../img/all-the-same.jpg";
+import floppy from "../img/floppy.jpg";
 import PNotes from "../components/PNotes.astro";
 ---
 
@@ -78,10 +79,19 @@ import PNotes from "../components/PNotes.astro";
       >it's generational</span
     >
   </p>
+  <Image
+    p-fragment
+    src={floppy}
+    alt="floppy"
+    class="alter-image-size"
+    style="text-align: center; --image-start-size: 6em; border-radius: 1rem;"
+  />
   <hr />
-  <span p-fragment
+</p-slide>
+<p-slide>
+  <span
     >📌 <span class="cover-red-all">Workflows:</span>
-    <span p-fragment>🛠️</span></span
+    <span>🛠️</span></span
   >
   <p p-fragment>
     A <span class="cover-all">"universal" checkout process</span> that prioritizes
