@@ -10,14 +10,14 @@ importers:
     dependencies:
       astro:
         specifier: ^5.10.2
-        version: 5.10.2(@types/node@24.0.8)(rollup@4.40.1)(sass@1.89.2)(typescript@5.8.3)
+        version: 5.10.2(@types/node@24.0.10)(rollup@4.40.1)(sass@1.89.2)(typescript@5.8.3)
       p-slides:
-        specifier: ^1.1.0
-        version: 1.1.0
+        specifier: ^1.2.0
+        version: 1.2.0
     devDependencies:
       '@types/node':
-        specifier: ^24.0.8
-        version: 24.0.8
+        specifier: ^24.0.10
+        version: 24.0.10
       sass:
         specifier: ^1.89.2
         version: 1.89.2
@@ -26,7 +26,7 @@ importers:
         version: 0.34.2
       vite-plugin-static-copy:
         specifier: ^3.1.0
-        version: 3.1.0(vite@6.3.4(@types/node@24.0.8)(sass@1.89.2))
+        version: 3.1.0(vite@6.3.4(@types/node@24.0.10)(sass@1.89.2))
 
 packages:
 
@@ -683,8 +683,8 @@ packages:
   '@types/nlcst@2.0.3':
     resolution: {integrity: sha512-vSYNSDe6Ix3q+6Z7ri9lyWqgGhJTmzRjZRqyq15N0Z/1/UnVsno9G/N40NBijoYx2seFDIl0+B2mgAb9mezUCA==}
 
-  '@types/node@24.0.8':
-    resolution: {integrity: sha512-WytNrFSgWO/esSH9NbpWUfTMGQwCGIKfCmNlmFDNiI5gGhgMmEA+V1AEvKLeBNvvtBnailJtkrEa2OIISwrVAA==}
+  '@types/node@24.0.10':
+    resolution: {integrity: sha512-ENHwaH+JIRTDIEEbDK6QSQntAYGtbvdDXnMXnZaZ6k13Du1dPMmprkEHIL7ok2Wl2aZevetwTAb5S+7yIF+enA==}
 
   '@types/unist@3.0.3':
     resolution: {integrity: sha512-ko/gIFJRv177XgZsZcBwnqJN5x/Gien8qNOn0D5bQU/zAzVf9Zt3BlcUiLqhV9y4ARk0GbT3tnUiPNgnTXzc/Q==}
@@ -1302,8 +1302,8 @@ packages:
     resolution: {integrity: sha512-mxLDbbGIBEXTJL0zEx8JIylaj3xQ7Z/7eEVjcF9fJX4DBiH9oqe+oahYnlKKxm0Ci9TlWTyhSHgygxMxjIB2jw==}
     engines: {node: '>=18'}
 
-  p-slides@1.1.0:
-    resolution: {integrity: sha512-SH1daEwv1a0H0pAbnFEcphiuOWNygRq8e8MwGIX/4Vclxmw5RsQd3Nm2lMAMz+4/zDvb6vvX4SgUxJs/QrcV1Q==}
+  p-slides@1.2.0:
+    resolution: {integrity: sha512-IV08rNu0jjWj+ssyDrh2mJoL38WPBs2+S34JIPQhMRudjFn35XCfH41xmusREFmwkoDxFrobJE27YJTM34r9Cw==}
 
   p-timeout@6.1.4:
     resolution: {integrity: sha512-MyIV3ZA/PmyBN/ud8vV9XzwTrNtR4jFrObymZYnZqMmW0zA8Z17vnT0rBgFE/TlohB+YCHqXMgZzb3Csp49vqg==}
@@ -2237,7 +2237,7 @@ snapshots:
 
   '@types/fontkit@2.0.8':
     dependencies:
-      '@types/node': 24.0.8
+      '@types/node': 24.0.10
 
   '@types/hast@3.0.4':
     dependencies:
@@ -2253,7 +2253,7 @@ snapshots:
     dependencies:
       '@types/unist': 3.0.3
 
-  '@types/node@24.0.8':
+  '@types/node@24.0.10':
     dependencies:
       undici-types: 7.8.0
 
@@ -2284,7 +2284,7 @@ snapshots:
 
   array-iterate@2.0.1: {}
 
-  astro@5.10.2(@types/node@24.0.8)(rollup@4.40.1)(sass@1.89.2)(typescript@5.8.3):
+  astro@5.10.2(@types/node@24.0.10)(rollup@4.40.1)(sass@1.89.2)(typescript@5.8.3):
     dependencies:
       '@astrojs/compiler': 2.12.2
       '@astrojs/internal-helpers': 0.6.1
@@ -2339,8 +2339,8 @@ snapshots:
       unist-util-visit: 5.0.0
       unstorage: 1.16.0
       vfile: 6.0.3
-      vite: 6.3.4(@types/node@24.0.8)(sass@1.89.2)
-      vitefu: 1.0.6(vite@6.3.4(@types/node@24.0.8)(sass@1.89.2))
+      vite: 6.3.4(@types/node@24.0.10)(sass@1.89.2)
+      vitefu: 1.0.6(vite@6.3.4(@types/node@24.0.10)(sass@1.89.2))
       xxhash-wasm: 1.1.0
       yargs-parser: 21.1.1
       yocto-spinner: 0.2.2
@@ -3165,7 +3165,7 @@ snapshots:
       eventemitter3: 5.0.1
       p-timeout: 6.1.4
 
-  p-slides@1.1.0: {}
+  p-slides@1.2.0: {}
 
   p-timeout@6.1.4: {}
 
@@ -3591,16 +3591,16 @@ snapshots:
       '@types/unist': 3.0.3
       vfile-message: 4.0.2
 
-  vite-plugin-static-copy@3.1.0(vite@6.3.4(@types/node@24.0.8)(sass@1.89.2)):
+  vite-plugin-static-copy@3.1.0(vite@6.3.4(@types/node@24.0.10)(sass@1.89.2)):
     dependencies:
       chokidar: 3.6.0
       fs-extra: 11.3.0
       p-map: 7.0.3
       picocolors: 1.1.1
       tinyglobby: 0.2.14
-      vite: 6.3.4(@types/node@24.0.8)(sass@1.89.2)
+      vite: 6.3.4(@types/node@24.0.10)(sass@1.89.2)
 
-  vite@6.3.4(@types/node@24.0.8)(sass@1.89.2):
+  vite@6.3.4(@types/node@24.0.10)(sass@1.89.2):
     dependencies:
       esbuild: 0.25.3
       fdir: 6.4.4(picomatch@4.0.2)
@@ -3609,13 +3609,13 @@ snapshots:
       rollup: 4.40.1
       tinyglobby: 0.2.14
     optionalDependencies:
-      '@types/node': 24.0.8
+      '@types/node': 24.0.10
       fsevents: 2.3.3
       sass: 1.89.2
 
-  vitefu@1.0.6(vite@6.3.4(@types/node@24.0.8)(sass@1.89.2)):
+  vitefu@1.0.6(vite@6.3.4(@types/node@24.0.10)(sass@1.89.2)):
     optionalDependencies:
-      vite: 6.3.4(@types/node@24.0.8)(sass@1.89.2)
+      vite: 6.3.4(@types/node@24.0.10)(sass@1.89.2)
 
   web-namespaces@2.0.1: {}
 

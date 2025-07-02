@@ -102,18 +102,19 @@ fullscreenButton.addEventListener("click", () => {
 const deckMode = {
   presentation: "presentation",
   speaker: "speaker",
+  grid: "grid",
 };
 
-function toggleDeckMode() {
+function toggleDeckMode(modeRequested) {
   const { mode } = deck;
-  deck.mode =
-    mode === deckMode.presentation ? deckMode.speaker : deckMode.presentation;
+  deck.mode = mode !== modeRequested ? modeRequested : deckMode.presentation;
   changeHash(deck.currentSlide);
 }
-const toggleModeButton = document.querySelector(".toggle-mode");
-if (toggleModeButton) {
-  toggleModeButton.addEventListener("click", toggleDeckMode);
-}
+
+document.querySelectorAll(".toggle-mode").forEach((el) => {
+  el.addEventListener("click", toggleDeckMode.bind(null, el.dataset.mode));
+});
+
 document.addEventListener("keydown", (keyEvent) => {
   if (keyEvent.key.toLowerCase() === "m" && keyEvent.ctrlKey) {
     toggleDeckMode();
