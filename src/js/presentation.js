@@ -27,7 +27,9 @@ export function listenSlideAutoplay(el) {
       const defaultTiming = mutation.target.getAttribute("timing") || 1000;
       const timing = mutation.target.getAttribute("timing-fragment") || 100;
       if (!isVisibile) return;
-      const elements = el.querySelectorAll(`p-fragment:not([no-autoplay])`);
+      const elements = el.querySelectorAll(
+        `p-fragment:not([no-autoplay]), [p-fragment]:not([no-autoplay])`
+      );
       elements.forEach((el, index) => {
         const ariaHidden = el.getAttribute("aria-hidden");
         const timingStart = el.getAttribute("timing-start");
