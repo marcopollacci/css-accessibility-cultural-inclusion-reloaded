@@ -26,6 +26,15 @@ p-deck {
       opacity: 1;
     }
   }
+  &[mode="grid"] {
+    .my-presentation {
+      gap: 0.2rem;
+      span {
+        font-size: unset;
+        line-height: unset;
+      }
+    }
+  }
 }
 p-slide[debug],
 p-slide.debug {
