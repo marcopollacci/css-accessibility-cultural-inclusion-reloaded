@@ -12,8 +12,8 @@ importers:
         specifier: ^5.11.1
         version: 5.11.1(@types/node@24.0.13)(rollup@4.40.1)(sass@1.89.2)(typescript@5.8.3)
       p-slides:
-        specifier: ^1.3.0
-        version: 1.3.0
+        specifier: ^1.2.0
+        version: 1.2.0
     devDependencies:
       '@types/node':
         specifier: ^24.0.13
@@ -1311,8 +1311,8 @@ packages:
     resolution: {integrity: sha512-mxLDbbGIBEXTJL0zEx8JIylaj3xQ7Z/7eEVjcF9fJX4DBiH9oqe+oahYnlKKxm0Ci9TlWTyhSHgygxMxjIB2jw==}
     engines: {node: '>=18'}
 
-  p-slides@1.3.0:
-    resolution: {integrity: sha512-yrTLVNSr7B+dkvRltl3iW1KtRnfxerJywN/IGpXi2dVpUEJuczYpbZWsyKD+8BmUlXP0F3n16E2X2Lu/fgmlCw==}
+  p-slides@1.2.0:
+    resolution: {integrity: sha512-IV08rNu0jjWj+ssyDrh2mJoL38WPBs2+S34JIPQhMRudjFn35XCfH41xmusREFmwkoDxFrobJE27YJTM34r9Cw==}
 
   p-timeout@6.1.4:
     resolution: {integrity: sha512-MyIV3ZA/PmyBN/ud8vV9XzwTrNtR4jFrObymZYnZqMmW0zA8Z17vnT0rBgFE/TlohB+YCHqXMgZzb3Csp49vqg==}
@@ -3184,7 +3184,7 @@ snapshots:
       eventemitter3: 5.0.1
       p-timeout: 6.1.4
 
-  p-slides@1.3.0: {}
+  p-slides@1.2.0: {}
 
   p-timeout@6.1.4: {}
 
