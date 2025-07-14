@@ -684,3 +684,9 @@ body[coming-soon] .coming-soon {
   --ending-point-gradient: #ffb6b6;
   @extend .current-gradient-sub-section;
 }
+
+@media (prefers-reduced-motion: no-preference) {
+  p-deck {
+    --sliding-duration: 0s;
+  }
+}
