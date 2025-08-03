@@ -12,7 +12,7 @@
     "astro:disable-toolbar": "astro preferences disable devToolbar"
   },
   "dependencies": {
-    "astro": "^5.12.5",
+    "astro": "^5.12.8",
     "p-slides": "^1.4.1"
   },
   "devDependencies": {
