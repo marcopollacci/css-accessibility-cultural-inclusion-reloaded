@@ -13,6 +13,8 @@ import Thanks from "../slides/thanks.astro";
 import UserPreferences from '../slides/user-preferences.astro';
 import dvm from "../img/dfm25.svg";
 import CoverDevfestMilano2025 from '../slides/cover-devfest-milano-2025.astro';
+import qrLink from "../img/qrcode_slide_dfm25.png";
+import qrLinkRating from "../img/qrcode_rating_dfm25.png";
 
 const canRender = import.meta.env.DEV || new Date("2025-10-11") < new Date();
 const favIcon = dvm.src
@@ -34,6 +36,6 @@ const metaData = {
     <Font />
     <UserPreferences />
     <Outro />
-    <Thanks urlLink="https://css-accessibility-cultural-inclusion-v2.pages.dev/devfest-milano-2025/" />
+    <Thanks qrLink={qrLink} qrLinkRating={qrLinkRating} newQR urlLink="https://css-accessibility-cultural-inclusion-v2.pages.dev/devfest-milano-2025/" />
   )}
 </Layout>
