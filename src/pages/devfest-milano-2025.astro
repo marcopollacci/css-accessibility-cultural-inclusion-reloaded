@@ -1,0 +1,43 @@
+---
+import Layout from "../layouts/Layout.astro";
+
+import Cover from "../slides/cover.astro";
+import CssVariables from '../slides/css-variables.astro';
+import Font from '../slides/font.astro';
+import Implementations from '../slides/implementations.astro';
+import Intro from '../slides/intro.astro';
+// import OtherWriting from '../slides/other-writing.astro'; <-- due to time constraints (lightning talk)
+// import UniversalDesign from '../slides/universal-design.astro'; <-- due to time constraints (lightning talk)
+import Outro from '../slides/outro.astro';
+import ReadingWriting from '../slides/reading-writing.astro';
+import Thanks from "../slides/thanks.astro";
+import UserPreferences from '../slides/user-preferences.astro';
+import dvm from "../img/dfm25.svg";
+import CoverDevfestMilano2025 from '../slides/cover-devfest-milano-2025.astro';
+import qrLink from "../img/qrcode_slide_dfm25.png";
+import qrLinkRating from "../img/qrcode_rating_dfm25.png";
+
+const canRender = import.meta.env.DEV || new Date("2025-10-11") < new Date();
+const favIcon = dvm.src
+const metaData = {
+  title: 'Designing for Cultural Inclusion',
+  description: 'CSS and Accessibility as Key Tools'
+}
+---
+
+<Layout canRender={canRender} favIcon={favIcon} metaData={metaData}>
+  <CoverDevfestMilano2025 />
+  {canRender && (
+    <Cover />
+    <Intro />
+    <CssVariables />
+    <ReadingWriting />
+    <Implementations />
+    <!-- <OtherWriting /> <-- due to time constraints (lightning talk)  -->
+    <Font />
+   <!--  <UniversalDesign /> <-- due to time constraints (lightning talk) -->
+    <UserPreferences />
+    <Outro />
+    <Thanks qrLink={qrLink} qrLinkRating={qrLinkRating} newQR urlLink="https://css-accessibility-cultural-inclusion-v2.pages.dev/devfest-milano-2025/" />
+  )}
+</Layout>

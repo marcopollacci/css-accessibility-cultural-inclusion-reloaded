@@ -2,7 +2,8 @@
 import { Image } from "astro:assets";
 import me from "../img/me.png";
 import fourtyFactory from "../img/40factory.svg";
-const { qrLink, urlLink, qrLinkRating } = Astro.props;
+import { undefined } from "astro:schema";
+const { qrLink, urlLink, qrLinkRating, newQR } = Astro.props;
 ---
 
 <p-slide>
@@ -67,7 +68,16 @@ const { qrLink, urlLink, qrLinkRating } = Astro.props;
       !qrLinkRating ? (
         <span class="to-do">adding qr image!</span>
       ) : (
-        <Image src={qrLinkRating} alt="qrcode slide" class="alter-image-size" />
+        <Image
+          style={
+            newQR
+              ? "--image-start-size: 8.5em; background-color: #ffffff"
+              : undefined
+          }
+          src={qrLinkRating}
+          alt="qrcode slide"
+          class="alter-image-size"
+        />
       )
     }
   </p-note>
