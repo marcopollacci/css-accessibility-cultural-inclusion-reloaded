@@ -18,6 +18,8 @@ Built on top of [P-Slides](https://github.com/MaxArt2501/p-slides)!
 
 - [15/07/2025 - Reggio Emilia Full Stack](https://css-accessibility-cultural-inclusion-v2.pages.dev/reggio-emilia-full-stack-2025/)
 
+- [07/10/2025 - Bologna FrontEnd 2025](https://css-accessibility-cultural-inclusion-v2.pages.dev/bologna-front-end-2025/)
+
 - [11/10/2025 - DevFest Milano 2025](https://css-accessibility-cultural-inclusion-v2.pages.dev/devfest-milano-2025/)
 
 ## Building
