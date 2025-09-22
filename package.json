@@ -6,6 +6,7 @@
     "dev:reggio-emilia-full-stack-2025": "astro dev --open '/reggio-emilia-full-stack-2025/'",
     "dev:green-software-italia-2025": "astro dev --open '/green-software-italia-2025/'",
     "dev:devfest-milano-2025": "astro dev --open '/devfest-milano-2025/'",
+    "dev:bfe-2025": "astro dev --open '/bologna-front-end-2025/'",
     "build": "astro build",
     "preview": "astro preview",
     "astro": "astro",
@@ -13,13 +14,13 @@
     "astro:disable-toolbar": "astro preferences disable devToolbar"
   },
   "dependencies": {
-    "astro": "^5.13.2",
+    "astro": "^5.13.10",
     "p-slides": "^1.4.2"
   },
   "devDependencies": {
-    "@types/node": "^24.3.0",
-    "sass": "^1.90.0",
-    "sharp": "^0.34.3",
-    "vite-plugin-static-copy": "^3.1.1"
+    "@types/node": "^24.5.2",
+    "sass": "^1.93.0",
+    "sharp": "^0.34.4",
+    "vite-plugin-static-copy": "^3.1.2"
   }
 }

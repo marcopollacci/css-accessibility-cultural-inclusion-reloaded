@@ -1,0 +1,45 @@
+---
+import Layout from "../layouts/Layout.astro";
+
+import Cover from "../slides/cover.astro";
+import CssVariables from '../slides/css-variables.astro';
+import Font from '../slides/font.astro';
+import Implementations from '../slides/implementations.astro';
+import Intro from '../slides/intro.astro';
+import Outro from '../slides/outro.astro';
+import ReadingWriting from '../slides/reading-writing.astro';
+import Thanks from "../slides/thanks.astro";
+import bfe from "../img/cropped-bfe-favicon-32x32.webp";
+import qrLink from "../img/qrcode_slide_bfe25.png";
+import qrLinkRating from "../img/qrcode_rating_bfe25.png";
+import CoverBfeBologna2025 from '../slides/cover-bfe-bologna-2025.astro';
+import OtherWriting from '../slides/other-writing.astro';
+import UniversalDesign from '../slides/universal-design.astro';
+import UserPreferences from '../slides/user-preferences.astro';
+import ImplementationsBis from '../slides/implementations-bis.astro';
+
+const canRender = import.meta.env.DEV || new Date("2025-10-07") < new Date();
+const favIcon = bfe.src
+const metaData = {
+  title: 'Designing for Cultural Inclusion',
+  description: 'CSS and Accessibility as Key Tools'
+}
+---
+
+<Layout canRender={canRender} favIcon={favIcon} metaData={metaData}>
+  <CoverBfeBologna2025 />
+  {canRender && (
+    <Cover />
+    <Intro />
+    <CssVariables />
+    <ReadingWriting />
+    <Implementations />
+    <ImplementationsBis />
+    <OtherWriting />
+    <Font />
+    <UniversalDesign />
+    <UserPreferences />
+    <Outro />
+    <Thanks qrLink={qrLink} qrLinkRating={qrLinkRating} newQR urlLink="https://css-accessibility-cultural-inclusion-v2.pages.dev/bologna-front-end-2025/" />
+  )}
+</Layout>
