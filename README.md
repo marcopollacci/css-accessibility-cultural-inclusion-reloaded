@@ -24,6 +24,8 @@ Built on top of [P-Slides](https://github.com/MaxArt2501/p-slides)!
 
 - [11/10/2025 - DevFest Milano 2025](https://css-accessibility-cultural-inclusion-v2.pages.dev/devfest-milano-2025/)
 
+- [22/10/2025 - Word Camp Pisa 2025](https://css-accessibility-cultural-inclusion-v2.pages.dev/word-camp-pisa-2025/)
+
 ## Building
 
 Node.js >= 20.x is required.

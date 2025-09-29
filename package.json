@@ -8,6 +8,7 @@
     "dev:devfest-milano-2025": "astro dev --open /devfest-milano-2025/",
     "dev:bfe-2025": "astro dev --open /bologna-front-end-2025/",
     "dev:wpmi-2025": "astro dev --open /wpmi-2025/",
+    "dev:wcp-2025": "astro dev --open /word-camp-pisa-2025/",
     "build": "astro build",
     "preview": "astro preview",
     "astro": "astro",
