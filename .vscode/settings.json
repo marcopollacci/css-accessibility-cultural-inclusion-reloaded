@@ -8,7 +8,8 @@
     "universal-design",
     "cover",
     "bfe",
-    "wpmi"
+    "wpmi",
+    "user-preferences"
   ],
   "workbench.colorCustomizations": {
     "activityBar.activeBackground": "#3144b3",
