@@ -9,6 +9,11 @@ import { Font } from "astro:assets";
 import comingSoon from "../img/coming-soon.png";
 const { canRender, favIcon, metaData } = Astro.props;
 const bodyAttributes = canRender ? undefined : "coming-soon";
+const fontsToPreload = [
+  "--talk-marco-graphik-semibold",
+  "--talk-marco-graphik-regular",
+  "--talk-marco-graphik-medium",
+] as const;
 ---
 
 <!doctype html>
@@ -17,9 +22,7 @@ const bodyAttributes = canRender ? undefined : "coming-soon";
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
     <link rel="icon" type="image/svg+xml" href={favIcon} />
-    <Font cssVariable="--talk-marco-graphik-semibold" />
-    <Font cssVariable="--talk-marco-graphik-regular" />
-    <Font cssVariable="--talk-marco-graphik-medium" />
+    {fontsToPreload.map((cssVariable) => <Font cssVariable={cssVariable} />)}
     <link href="/css/prism-one-light.css" rel="stylesheet" />
     <meta name="description" content={metaData.description} />
 
