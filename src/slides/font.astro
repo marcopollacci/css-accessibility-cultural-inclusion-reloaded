@@ -107,13 +107,22 @@ import PNotes from "../components/PNotes.astro";
     class="small-line"
     data-label-file="font.css">
     <code is:raw style="font-size: 0.8em" class="language-scss"> 
-    body {
-      font-family: 'Lobster' // only Latin Font
+    :root {
+       --font-family: "Lobster";
     }</code>
     <p-fragment><code is:raw style="font-size: 0.8em;padding-inline-start: 0;" class="language-scss">
-    body:lang(ar) {
-      font-family: Noto Sans Arabic, sans-serif;
+    :lang(ar) {
+      --font-family: Noto Sans Arabic, sans-serif;
     }</code>
-    </p-fragment>
+    </p-fragment><p-fragment><code is:raw style="font-size: 0.8em;padding-inline-start: 0;" class="language-scss">
+    body {
+      font-family: var(--font-family);
+    }</code></p-fragment>
     </pre>
+  <PNotes>
+    <p>
+      The <b>:lang()</b> CSS pseudo-class matches elements based on the language
+      they are determined to be in.
+    </p>
+  </PNotes>
 </p-slide>
