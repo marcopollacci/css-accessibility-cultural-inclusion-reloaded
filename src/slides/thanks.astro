@@ -2,7 +2,7 @@
 import { Image } from "astro:assets";
 import me from "../img/me.png";
 import fourtyFactory from "../img/40factory.svg";
-const { qrLink, urlLink, qrLinkRating, newQR } = Astro.props;
+const { qrLink, urlLink, qrLinkRating, newQR, meReloaded } = Astro.props;
 ---
 
 <p-slide>
@@ -42,11 +42,10 @@ const { qrLink, urlLink, qrLinkRating, newQR } = Astro.props;
   <p-note class="text-cover my-data my-presentation">
     <h5 class="text-cover">Thank you again!</h5>
     <Image
-      src={me}
-      class="my-face"
+      src={meReloaded || me}
+      class="my-face alter-image-size"
       alt="me"
       style="--image-start-size: 6em"
-      class="alter-image-size"
     />
 
     <span>Marco Pollacci</span>

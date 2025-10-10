@@ -4,6 +4,7 @@ import me from "../img/me.png";
 import qrLink from "../img/qr_link.svg";
 import fourtyFactory from "../img/40factory.svg";
 import gka from "../img/gitkraken_ambassador.webp";
+const { meReloaded } = Astro.props;
 ---
 
 <p-slide class="two-columns" autoplay>
@@ -13,11 +14,10 @@ import gka from "../img/gitkraken_ambassador.webp";
   >
     <h5>Hello Folks!</h5>
     <Image
-      src={me}
-      class="my-face"
+      src={meReloaded || me}
+      class="my-face alter-image-size"
       alt="me"
       style="--image-start-size: 6em"
-      class="alter-image-size"
     />
     <span>Marco Pollacci</span>
     <span>Senior Frontend Developer</span>
