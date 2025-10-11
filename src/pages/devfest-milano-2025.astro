@@ -15,6 +15,7 @@ import qrLink from "../img/qrcode_slide_dfm25.png";
 import qrLinkRating from "../img/qrcode_rating_dfm25.png";
 import ImplementationsBis from '../slides/implementations-bis.astro';
 import me2 from "../img/me2.jpeg";
+import UserPreferences from '../slides/user-preferences.astro';
 
 const canRender = import.meta.env.DEV || new Date("2025-10-11") < new Date();
 const favIcon = dvm.src
@@ -34,6 +35,7 @@ const metaData = {
     <Implementations />
     <ImplementationsBis />
     <Font />
+    <UserPreferences />
     <Outro />
     <Thanks meReloaded={me2} qrLink={qrLink} qrLinkRating={qrLinkRating} newQR urlLink="https://css-accessibility-cultural-inclusion-v2.pages.dev/devfest-milano-2025/" />
   )}
