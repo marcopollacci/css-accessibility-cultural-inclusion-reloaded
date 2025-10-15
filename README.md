@@ -14,17 +14,17 @@ Built on top of [P-Slides](https://github.com/MaxArt2501/p-slides)!
 
 - [28/03/2025 - CSS Day 2025](https://css-accessibility-cultural-inclusion.pages.dev/css-day-2025/)
 
-- [19/06/2025 - Green Software Italia](https://css-accessibility-cultural-inclusion-v2.pages.dev/green-software-italia-2025/)
+- [19/06/2025 - Green Software Italia](https://css-accessibility-cultural-inclusion.marcotalk.dev/green-software-italia-2025/)
 
-- [15/07/2025 - Reggio Emilia Full Stack](https://css-accessibility-cultural-inclusion-v2.pages.dev/reggio-emilia-full-stack-2025/)
+- [15/07/2025 - Reggio Emilia Full Stack](https://css-accessibility-cultural-inclusion.marcotalk.dev/reggio-emilia-full-stack-2025/)
 
-- [07/10/2025 - Bologna FrontEnd 2025](https://css-accessibility-cultural-inclusion-v2.pages.dev/bologna-front-end-2025/)
+- [07/10/2025 - Bologna FrontEnd 2025](https://css-accessibility-cultural-inclusion.marcotalk.dev/bologna-front-end-2025/)
 
-- [08/10/2025 - WPMI 2025](https://css-accessibility-cultural-inclusion-v2.pages.dev/wpmi-2025/)
+- [08/10/2025 - WPMI 2025](https://css-accessibility-cultural-inclusion.marcotalk.dev/wpmi-2025/)
 
-- [11/10/2025 - DevFest Milano 2025](https://css-accessibility-cultural-inclusion-v2.pages.dev/devfest-milano-2025/)
+- [11/10/2025 - DevFest Milano 2025](https://css-accessibility-cultural-inclusion.marcotalk.dev/devfest-milano-2025/)
 
-- [22/10/2025 - Word Camp Pisa 2025](https://css-accessibility-cultural-inclusion-v2.pages.dev/word-camp-pisa-2025/)
+- [22/10/2025 - Word Camp Pisa 2025](https://css-accessibility-cultural-inclusion.marcotalk.dev/word-camp-pisa-2025/)
 
 ## Building
 
