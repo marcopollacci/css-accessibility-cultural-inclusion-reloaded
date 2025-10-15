@@ -10,7 +10,8 @@
     "bfe",
     "wpmi",
     "user-preferences",
-    "font"
+    "font",
+    "wcp"
   ],
   "workbench.colorCustomizations": {
     "activityBar.activeBackground": "#3144b3",
