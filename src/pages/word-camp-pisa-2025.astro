@@ -42,3 +42,17 @@ const metaData = {
     <Thanks qrLink={qrLink} qrLinkRating={qrLinkRating} newQR urlLink="https://css-accessibility-cultural-inclusion.marcotalk.dev/word-camp-pisa-2025/" />
   )}
 </Layout>
+<style lang="scss" is:global>
+  :root {
+    &:has(p-slide.cover[aria-hidden="false"]) {
+      --current-slide-bg: #4400e2;
+    }
+    --current-slide-bg: #000;
+  }
+  p-slide {
+    &:first-of-type {
+      background-color: #4400e2;
+    }
+    background-color: #000;
+  }
+</style>
