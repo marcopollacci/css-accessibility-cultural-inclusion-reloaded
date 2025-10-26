@@ -5,7 +5,6 @@ import Cover from "../slides/cover.astro";
 import CssVariables from '../slides/css-variables.astro';
 import Font from '../slides/font.astro';
 import Implementations from '../slides/implementations.astro';
-
 import Outro from '../slides/outro.astro';
 import ReadingWriting from '../slides/reading-writing.astro';
 import Thanks from "../slides/thanks.astro";
@@ -17,6 +16,8 @@ import meMib from "../img/me-mib-alien.webp";
 import UserPreferences from '../slides/user-preferences.astro';
 import CoverDevfestPescara2025 from '../slides/cover-devfest-pescara-2025.astro';
 import IntroMib from '../slides/intro-mib.astro';
+import OtherWriting from '../slides/other-writing.astro';
+import UniversalDesign from '../slides/universal-design.astro';
 
 const canRender = import.meta.env.DEV || new Date("2025-11-09") < new Date();
 const favIcon = dvm.src
@@ -32,11 +33,14 @@ const titleSlide = "Agent M"
   {canRender && (
     <Cover meReloaded={meMib} title={titleSlide} />
     <IntroMib />
+
     <CssVariables />
     <ReadingWriting />
     <Implementations />
     <ImplementationsBis />
+    <OtherWriting />
     <Font />
+    <UniversalDesign />
     <UserPreferences />
     <Outro />
     <Thanks meReloaded={meMib} title={titleSlide} qrLink={qrLink} qrLinkRating={qrLinkRating} newQR urlLink="https://css-accessibility-cultural-inclusion.marcotalk.dev/devfest-pescara-2025/" />
