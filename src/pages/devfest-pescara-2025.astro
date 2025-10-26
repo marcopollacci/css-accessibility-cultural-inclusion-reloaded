@@ -18,7 +18,7 @@ import CoverDevfestPescara2025 from '../slides/cover-devfest-pescara-2025.astro'
 import IntroMib from '../slides/intro-mib.astro';
 import OtherWriting from '../slides/other-writing.astro';
 import UniversalDesign from '../slides/universal-design.astro';
-
+import alienPost from "../img/alien-post.gif";
 const canRender = import.meta.env.DEV || new Date("2025-11-09") < new Date();
 const favIcon = dvm.src
 const metaData = {
@@ -33,12 +33,11 @@ const titleSlide = "Agent M"
   {canRender && (
     <Cover meReloaded={meMib} title={titleSlide} />
     <IntroMib />
-
     <CssVariables />
     <ReadingWriting />
     <Implementations />
     <ImplementationsBis />
-    <OtherWriting />
+    <OtherWriting externalImage={alienPost} />
     <Font />
     <UniversalDesign />
     <UserPreferences />

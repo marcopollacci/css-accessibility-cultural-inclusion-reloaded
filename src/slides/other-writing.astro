@@ -1,10 +1,25 @@
 ---
+import { Image } from "astro:assets";
 import PNotes from "../components/PNotes.astro";
+const { externalImage } = Astro.props;
 ---
 
 <p-slide class="cover-internal">
   <h3 style="margin-block-end: 0.5em;">Not only horizontal direction!</h3>
-  <span style="font-size: 8rem;">🧧</span>
+  <span style="font-size: 8rem;">
+    {
+      externalImage ? (
+        <Image
+          class="alter-image-size"
+          src={externalImage}
+          alt="alien post"
+          style="--image-start-size: 2.3em;margin-block-start: 1rem;"
+        />
+      ) : (
+        "🧧"
+      )
+    }
+  </span>
   <PNotes>
     Traditionally, Japanese, Korean, and Chinese (including Vietnamese in the
     past) have used vertical writing, with columns running from top to bottom
