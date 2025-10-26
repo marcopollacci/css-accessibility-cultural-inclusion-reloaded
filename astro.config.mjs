@@ -42,6 +42,23 @@ export default defineConfig({
           },
         ],
       },
+      {
+        provider: "local",
+        name: "Poppins Black",
+        cssVariable: "--talk-poppins-black",
+        variants: [
+          {
+            src: ["./src/fonts/Poppins-Black.ttf"],
+            weight: 900,
+            style: "normal",
+          },
+          {
+            src: ["./src/fonts/Poppins-Regular.ttf"],
+            weight: 400,
+            style: "normal",
+          },
+        ],
+      },
     ],
   },
   vite: {

@@ -9,6 +9,7 @@
     "dev:bfe-2025": "astro dev --open /bologna-front-end-2025/",
     "dev:wpmi-2025": "astro dev --open /wpmi-2025/",
     "dev:wcp-2025": "astro dev --open /word-camp-pisa-2025/",
+    "dev:devfest-pescara-2025": "astro dev --open /devfest-pescara-2025/",
     "build": "astro build",
     "preview": "astro preview",
     "astro": "astro",
@@ -17,7 +18,7 @@
     "prepare": "husky"
   },
   "dependencies": {
-    "astro": "^5.14.8",
+    "astro": "^5.15.1",
     "p-slides": "^1.4.2"
   },
   "devDependencies": {

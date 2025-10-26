@@ -11,7 +11,8 @@
     "wpmi",
     "user-preferences",
     "font",
-    "wcp"
+    "wcp",
+    "devfest-pescara"
   ],
   "workbench.colorCustomizations": {
     "activityBar.activeBackground": "#3144b3",

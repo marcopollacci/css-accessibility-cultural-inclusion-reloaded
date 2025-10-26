@@ -4,7 +4,7 @@ import me from "../img/me.png";
 import qrLink from "../img/qr_link.svg";
 import fourtyFactory from "../img/40factory.svg";
 import gka from "../img/gitkraken_ambassador.webp";
-const { meReloaded } = Astro.props;
+const { meReloaded, title } = Astro.props;
 ---
 
 <p-slide class="two-columns" autoplay>
@@ -19,7 +19,7 @@ const { meReloaded } = Astro.props;
       alt="me"
       style="--image-start-size: 6em"
     />
-    <span>Marco Pollacci</span>
+    <span>{title || "Marco Pollacci"}</span>
     <span>Senior Frontend Developer</span>
     <div role="generic">
       <span>@</span>

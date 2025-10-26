@@ -2,7 +2,7 @@
 import { Image } from "astro:assets";
 import me from "../img/me.png";
 import fourtyFactory from "../img/40factory.svg";
-const { qrLink, urlLink, qrLinkRating, newQR, meReloaded } = Astro.props;
+const { qrLink, urlLink, qrLinkRating, newQR, meReloaded, title } = Astro.props;
 ---
 
 <p-slide>
@@ -48,7 +48,7 @@ const { qrLink, urlLink, qrLinkRating, newQR, meReloaded } = Astro.props;
       style="--image-start-size: 6em"
     />
 
-    <span>Marco Pollacci</span>
+    <span>{title || "Marco Pollacci"}</span>
     <span>Senior Frontend Developer</span>
     <div role="generic">
       <span>@</span>
