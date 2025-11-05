@@ -1,6 +1,6 @@
 ---
+import { Image } from "astro:assets";
 import Layout from "../layouts/Layout.astro";
-
 import Cover from "../slides/cover.astro";
 import CssVariables from '../slides/css-variables.astro';
 import Font from '../slides/font.astro';
@@ -19,6 +19,7 @@ import IntroMib from '../slides/intro-mib.astro';
 import OtherWriting from '../slides/other-writing.astro';
 import UniversalDesign from '../slides/universal-design.astro';
 import alienPost from "../img/alien-post.gif";
+import funnyAlien from "../img/funny_alien.webp";
 const canRender = import.meta.env.DEV || new Date("2025-11-09") < new Date();
 const favIcon = dvm.src
 const metaData = {
@@ -38,7 +39,21 @@ const titleSlide = "Agent M"
     <Implementations />
     <ImplementationsBis />
     <OtherWriting externalImage={alienPost} />
-    <Font />
+    <Font>
+      <div slot="system-fonts">
+        <h4 style="margin-block-end: 1em" class="cover-all">
+          By default, browsers seamlessly switch to system fonts
+        </h4>
+        <p-fragment
+          ><Image
+        style="--image-start-size: 7em"
+        src={funnyAlien}
+        alt="funny alien"
+        class="alter-image-size"
+      /></p-fragment
+    >
+      </div>
+    </Font>
     <UniversalDesign />
     <UserPreferences />
     <Outro />

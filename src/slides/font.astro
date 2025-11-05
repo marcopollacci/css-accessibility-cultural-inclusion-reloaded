@@ -80,17 +80,19 @@ import PNotes from "../components/PNotes.astro";
   <Image src={noRead} alt="no-read" class="alter-image-size" />
 </p-slide>
 <p-slide autoplay timing="500" timing-fragment="700" class="center">
-  <h4 style="margin-block-end: 1em" class="cover-all">
-    By default, browsers seamlessly switch to system fonts
-  </h4>
-  <p-fragment
-    ><Image
-      style="--image-start-size: 5em"
-      src={fallOut}
-      alt="fallout ok guys"
-      class="alter-image-size"
-    /></p-fragment
-  >
+  <slot name="system-fonts">
+    <h4 style="margin-block-end: 1em" class="cover-all">
+      By default, browsers seamlessly switch to system fonts
+    </h4>
+    <p-fragment
+      ><Image
+        style="--image-start-size: 5em"
+        src={fallOut}
+        alt="fallout ok guys"
+        class="alter-image-size"
+      /></p-fragment
+    >
+  </slot>
 </p-slide>
 <p-slide class="center">
   <h1 class="cover-all">BUT</h1>
