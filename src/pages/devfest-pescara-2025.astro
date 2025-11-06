@@ -20,6 +20,9 @@ import OtherWriting from '../slides/other-writing.astro';
 import UniversalDesign from '../slides/universal-design.astro';
 import alienPost from "../img/alien-post.gif";
 import funnyAlien from "../img/funny_alien.webp";
+import weSupportYou from "../img/we-support-you.webp";
+import cantRead from '../img/cant-read.webp';
+
 const canRender = import.meta.env.DEV || new Date("2025-11-09") < new Date();
 const favIcon = dvm.src
 const metaData = {
@@ -50,11 +53,12 @@ const titleSlide = "Agent M"
         src={funnyAlien}
         alt="funny alien"
         class="alter-image-size"
-      /></p-fragment
-    >
+      /></p-fragment>
       </div>
+        <Image slot="noRead" src={cantRead} alt="cant read" class="alter-image-size" />
+
     </Font>
-    <UniversalDesign />
+    <UniversalDesign imagePluralDesign={weSupportYou} />
     <UserPreferences />
     <Outro />
     <Thanks meReloaded={meMib} title={titleSlide} qrLink={qrLink} qrLinkRating={qrLinkRating} newQR urlLink="https://css-accessibility-cultural-inclusion.marcotalk.dev/devfest-pescara-2025/" />

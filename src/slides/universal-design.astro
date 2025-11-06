@@ -5,6 +5,7 @@ import weekendBlindingLights from "../img/the-weeknd-blinding-lights.jpg";
 import allTheSame from "../img/all-the-same.jpg";
 import floppy from "../img/floppy.jpg";
 import PNotes from "../components/PNotes.astro";
+const { imagePluralDesign } = Astro.props;
 ---
 
 <p-slide class="center">
@@ -103,17 +104,30 @@ import PNotes from "../components/PNotes.astro";
   <h1 style="margin-block-end: 2rem;">How can we do better?</h1>
   <span p-fragment>∘ ∘ ∘ ( °ヮ° ) ?</span>
 </p-slide>
-<p-slide class="center" autoplay>
+<p-slide class="center" autoplay timing-fragment="350">
   <h3 style="margin: 0">🥁 Welcome to 🥁</h3>
   <p-fragment style="margin-block-start: 4rem;"
     ><h3 class="cover-all">Plural Design: The Adaptive Approach</h3></p-fragment
   >
+  {
+    imagePluralDesign && (
+      <p-fragment>
+        <Image
+          p-fragment
+          src={imagePluralDesign}
+          alt="plural design"
+          class="alter-image-size"
+          style="--image-start-size: 6em; border-radius: 1rem;margin-block-start: 2rem;"
+        />
+      </p-fragment>
+    )
+  }
 </p-slide>
 <p-slide>
   <p>- Don't look for ONE solution for everyone</p>
   <p p-fragment>
     - Create a <span class="cover-all">flexible system</span> that recognizes diverse
-    mental models and presents the most appropriate solution
+    models and presents the most appropriate solution
   </p>
 </p-slide>
 <p-slide class="center">

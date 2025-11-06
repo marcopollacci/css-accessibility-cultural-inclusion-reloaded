@@ -77,7 +77,9 @@ import PNotes from "../components/PNotes.astro";
   >
 </p-slide>
 <p-slide>
-  <Image src={noRead} alt="no-read" class="alter-image-size" />
+  <slot name="noRead">
+    <Image src={noRead} alt="no-read" class="alter-image-size" />
+  </slot>
 </p-slide>
 <p-slide autoplay timing="500" timing-fragment="700" class="center">
   <slot name="system-fonts">
