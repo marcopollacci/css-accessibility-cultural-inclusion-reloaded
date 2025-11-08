@@ -22,6 +22,7 @@ import alienPost from "../img/alien-post.gif";
 import funnyAlien from "../img/funny_alien.webp";
 import weSupportYou from "../img/we-support-you.webp";
 import cantRead from '../img/cant-read.webp';
+import SponsorDevfestPescara2025 from '../slides/sponsor-devfest-pescara-2025.astro';
 
 const canRender = import.meta.env.DEV || new Date("2025-11-09") < new Date();
 const favIcon = dvm.src
@@ -35,6 +36,7 @@ const titleSlide = "Agent M"
 <Layout canRender={canRender} favIcon={favIcon} metaData={metaData}>
   <CoverDevfestPescara2025 />
   {canRender && (
+    <SponsorDevfestPescara2025 />
     <Cover meReloaded={meMib} title={titleSlide} />
     <IntroMib />
     <CssVariables />
