@@ -11,12 +11,12 @@ import ReadingWriting from '../slides/reading-writing.astro';
 import Thanks from "../slides/thanks.astro";
 import qrLinkRating from "../img/qrcode_rating_wcp2025.png";
 import OtherWriting from '../slides/other-writing.astro';
-import UserPreferences from '../slides/user-preferences.astro';
 import UniversalDesign from '../slides/universal-design.astro';
 import refsFav from '../img/logo-wcp.png';
 import qrLink from "../img/qrcode_slide_wcp2025.png";
 import ImplementationsBis from '../slides/implementations-bis.astro';
 import CoverWcp2025 from '../slides/cover-wcp-2025.astro';
+import UserPreferencesReloaded from '../slides/user-preferences-reloaded.astro';
 const canRender = import.meta.env.DEV || new Date("2025-11-22") < new Date();
 const favIcon = refsFav.src;
 const metaData = {
@@ -37,7 +37,7 @@ const metaData = {
     <OtherWriting />
     <Font />
     <UniversalDesign />
-    <UserPreferences />
+    <UserPreferencesReloaded />
     <Outro />
     <Thanks qrLink={qrLink} qrLinkRating={qrLinkRating} newQR urlLink="https://css-accessibility-cultural-inclusion.marcotalk.dev/word-camp-pisa-2025/" />
   )}
