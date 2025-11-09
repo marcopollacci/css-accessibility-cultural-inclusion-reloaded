@@ -32,7 +32,7 @@ import PNotes from "../components/PNotes.astro";
       --bg: #ffffff;
       --fg: #1a1a1a;
     } 
-
+    // can be dark or light
     @media (prefers-color-scheme: dark) {
       :root {
         --bg: #0f0f0f;
@@ -59,7 +59,7 @@ import PNotes from "../components/PNotes.astro";
       --text: #1a1a1a;
       color: var(--text);
     }
-
+    //can be: more, less, custom
     @media (prefers-contrast: more) {
       .my-card {
         --text: #000;
@@ -67,6 +67,12 @@ import PNotes from "../components/PNotes.astro";
       }
     }
 </code></pre>
+  <PNotes>
+    custom: Indicates that user has notified the system for using a specific set
+    of colors, and the contrast implied by these colors matches neither more nor
+    less. This value will match the color palette specified by users of
+    forced-colors: active.
+  </PNotes>
 </p-slide>
 <p-slide>
   <ul data-coding style="margin-block-end: 0.3em;">
