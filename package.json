@@ -19,10 +19,10 @@
   },
   "dependencies": {
     "astro": "^5.15.5",
-    "p-slides": "^1.4.2"
+    "p-slides": "^1.5.0"
   },
   "devDependencies": {
-    "@types/node": "^24.10.0",
+    "@types/node": "^24.10.1",
     "husky": "^9.1.7",
     "sass": "^1.94.0",
     "sharp": "^0.34.5",
