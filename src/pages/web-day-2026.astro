@@ -1,0 +1,53 @@
+---
+import Layout from "../layouts/Layout.astro";
+
+import qrLinkRating from "../img/qrcode_rating_webday2026.png";
+import qrLink from "../img/qrcode_slide_webday2026.png";
+import refsFav from "../img/webday.png";
+import CoverWebDay2026 from "../slides/cover-web-day-2026.astro";
+import Cover from "../slides/cover.astro";
+import CssVariables from "../slides/css-variables.astro";
+import Font from "../slides/font.astro";
+import ImplementationsBis from "../slides/implementations-bis.astro";
+import Implementations from "../slides/implementations.astro";
+import Intro from "../slides/intro.astro";
+import OtherWriting from "../slides/other-writing.astro";
+import Outro from "../slides/outro.astro";
+import ReadingWriting from "../slides/reading-writing.astro";
+import Thanks from "../slides/thanks.astro";
+import UniversalDesign from "../slides/universal-design.astro";
+import UserPreferencesReloaded from "../slides/user-preferences-reloaded.astro";
+const canRender = import.meta.env.DEV || new Date("2026-03-30") < new Date();
+const favIcon = refsFav.src;
+const metaData = {
+  title: "Designing for Cultural Inclusion",
+  description: "CSS and Accessibility as Key Tools",
+};
+---
+
+<Layout {canRender} {favIcon} {metaData}>
+  <CoverWebDay2026 />
+  {
+    canRender && (
+      <>
+        <Cover />
+        <Intro />
+        <CssVariables />
+        <ReadingWriting />
+        <Implementations />
+        <ImplementationsBis />
+        <OtherWriting />
+        <Font />
+        <UniversalDesign />
+        <UserPreferencesReloaded />
+        <Outro />
+        <Thanks
+          qrLink={qrLink}
+          qrLinkRating={qrLinkRating}
+          newQR
+          urlLink="https://css-accessibility-cultural-inclusion.marcotalk.dev/web-day-2026/"
+        />
+      </>
+    )
+  }
+</Layout>
