@@ -68,6 +68,9 @@ function toggleNavButtons(event) {
       });
     }
   }
+  if (Object.keys(navButtons).length === 0) {
+    return;
+  }
   navButtons.previous.disabled = deck.atStart;
   navButtons.next.disabled = deck.atEnd;
 }
@@ -92,7 +95,7 @@ deck.addEventListener("p-slides.slidechange", ({ detail: { slide } }) => {
   setTimeout(() => {
     deck.style.setProperty(
       "--current-slide-bg",
-      getComputedStyle(slide).backgroundColor
+      getComputedStyle(slide).backgroundColor,
     );
   });
 });
