@@ -28,6 +28,8 @@ Built on top of [P-Slides](https://github.com/MaxArt2501/p-slides)!
 
 - [22/10/2025 - Word Camp Pisa 2025](https://css-accessibility-cultural-inclusion.marcotalk.dev/word-camp-pisa-2025/)
 
+- [30/03/2026 - Web Day 2026](https://css-accessibility-cultural-inclusion.marcotalk.dev/web-day-2026/)
+
 ## Building
 
 Node.js >= 20.x is required.
