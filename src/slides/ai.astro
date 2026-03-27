@@ -1,0 +1,54 @@
+---
+import PNotes from "../components/PNotes.astro";
+---
+
+<p-slide
+  style="flex-direction: row; align-items: center; gap: 0.5em"
+  class="cover center"
+>
+  🤖
+  <h1>Can AI Help?</h1>
+  🤖
+</p-slide>
+<p-slide>
+  <h5>
+    AI is a <span class="cover-all">powerful tool</span>, but it&#39;s not a
+    silver bullet for cultural inclusion.
+  </h5>
+  <h5 p-fragment style="margin-block-start: 0.5em">
+    It can help identify and address some issues, <span class="cover-all"
+      >but it can also perpetuate biases if not used carefully.</span
+    >
+  </h5>
+  <PNotes>
+    AI can be a helpful assistant inidentifying potential cultural issues in
+    design, but it&#39;s not a substitute for human judgment and cultural
+    sensitivity. It can also perpetuate existing biases if the training data is
+    not diverse and inclusive.
+  </PNotes>
+</p-slide>
+<p-slide class="center cover-internal">
+  <h3>The key is to use AI as a tool, not a solution.</h3>
+</p-slide>
+<p-slide>
+  <h4 style="margin-block-end: 0.5em" class="center">Let&#39;s Code 👨‍💻</h4>
+  <pre
+    class="small-line"
+    data-label-file="agents.md">
+ <code is:raw style="font-size: .7em" class="language-md"> 
+    # CSS Cultural Inclusion Reviewer
+    Review this CSS and detect cultural assumptions.
+
+    Focus on:
+    - LTR-only layout (left/right usage)
+    - missing RTL support
+    - lack of logical properties
+    - font issues for non-Latin scripts
+    - missing :lang() usage
+
+    Return:
+    - issue
+    - why it matters
+    - suggested fix (CSS and HTML first)</code>
+</pre>
+</p-slide>
