@@ -79,7 +79,14 @@ export default defineConfig({
     plugins: [
       // @ts-ignore
       viteStaticCopy({
-        targets: [{ src: "node_modules/p-slides/css/deck.css", dest: "css" }],
+        targets: [
+          {
+            src: "node_modules/p-slides/css/deck.css",
+            dest: "css",
+            // @ts-ignore
+            rename: { stripBase: 3 },
+          },
+        ],
       }),
     ],
   },
