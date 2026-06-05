@@ -11,6 +11,7 @@
     "dev:wcp-2025": "astro dev --open /word-camp-pisa-2025/",
     "dev:devfest-pescara-2025": "astro dev --open /devfest-pescara-2025/",
     "dev:web-day-2026": "astro dev --open /web-day-2026/",
+    "dev:ws-2026": "astro dev --open /working-software-2026/",
     "build": "astro build",
     "preview": "astro preview",
     "astro": "astro",
@@ -19,16 +20,16 @@
     "prepare": "husky"
   },
   "dependencies": {
-    "astro": "^6.1.2",
+    "astro": "^6.4.4",
     "p-slides": "^1.5.1"
   },
   "devDependencies": {
-    "@types/node": "^25.5.0",
+    "@types/node": "^25.9.1",
     "husky": "^9.1.7",
-    "prettier": "^3.8.1",
+    "prettier": "^3.8.3",
     "prettier-plugin-astro": "^0.14.1",
-    "sass": "^1.98.0",
+    "sass": "^1.100.0",
     "sharp": "^0.34.5",
-    "vite-plugin-static-copy": "^4.0.0"
+    "vite-plugin-static-copy": "^4.1.0"
   }
 }

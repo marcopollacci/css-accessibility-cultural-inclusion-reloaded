@@ -7,6 +7,7 @@ import SpeakerMode from "../components/SpeakerMode.astro";
 import { Image } from "astro:assets";
 import { Font } from "astro:assets";
 import comingSoon from "../img/coming-soon.png";
+import Seo from "../components/Seo.astro";
 const { canRender, favIcon, metaData } = Astro.props;
 const bodyAttributes = canRender ? undefined : "coming-soon";
 const fontsToPreload = [
@@ -22,6 +23,7 @@ const fontsToPreload = [
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
+    <Seo {...metaData} />
     <link rel="icon" type="image/svg+xml" href={favIcon} />
     {fontsToPreload.map((cssVariable) => <Font cssVariable={cssVariable} />)}
     <link href="/css/prism-one-light.css" rel="stylesheet" />
