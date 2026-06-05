@@ -20,7 +20,9 @@ const canRender = import.meta.env.DEV || new Date("2025-07-15") < new Date();
 const favIcon = refsFav.src;
 const metaData = {
   title: 'Designing for Cultural Inclusion',
-  description: 'CSS and Accessibility as Key Tools'
+  description: 'CSS and Accessibility as Key Tools',
+  image: 'og-image.png',
+  site: 'https://css-accessibility-cultural-inclusion-v2.pages.dev/reggio-emilia-full-stack-2025/',
 }
 ---
 
@@ -37,6 +39,6 @@ const metaData = {
     <UniversalDesign />
     <UserPreferences />
     <Outro />
-    <Thanks qrLink={qrLink} qrLinkRating={qrLinkRating} urlLink="https://css-accessibility-cultural-inclusion-v2.pages.dev/reggio-emilia-full-stack-2025/" />
+    <Thanks qrLink={qrLink} qrLinkRating={qrLinkRating} urlLink={metaData.site} />
   )}
 </Layout>

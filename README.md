@@ -30,6 +30,8 @@ Built on top of [P-Slides](https://github.com/MaxArt2501/p-slides)!
 
 - [30/03/2026 - Web Day 2026](https://css-accessibility-cultural-inclusion.marcotalk.dev/web-day-2026/)
 
+- [19/06/2026 - Working Software 2026](https://css-accessibility-cultural-inclusion.marcotalk.dev/working-software-2026/)
+
 ## Building
 
 Node.js >= 20.x is required.

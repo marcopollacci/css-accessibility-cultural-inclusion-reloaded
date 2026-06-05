@@ -20,7 +20,9 @@ const canRender = import.meta.env.DEV || new Date("2025-06-19") < new Date();
 const favIcon = gsi.src
 const metaData = {
   title: 'Designing for Cultural Inclusion',
-  description: 'CSS and Accessibility as Key Tools'
+  description: 'CSS and Accessibility as Key Tools',
+  image: 'og-image.png',
+  site: 'https://css-accessibility-cultural-inclusion-v2.pages.dev/green-software-italia-2025/',
 }
 ---
 
@@ -36,6 +38,6 @@ const metaData = {
     <Font />
     <UserPreferences />
     <Outro />
-    <Thanks qrLink={qrLink} qrLinkRating={qrLinkRating} urlLink="https://css-accessibility-cultural-inclusion-v2.pages.dev/green-software-italia-2025/" />
+    <Thanks qrLink={qrLink} qrLinkRating={qrLinkRating} urlLink={metaData.site} />
   )}
 </Layout>

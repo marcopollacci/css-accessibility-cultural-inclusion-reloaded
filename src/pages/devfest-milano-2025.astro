@@ -21,7 +21,9 @@ const canRender = import.meta.env.DEV || new Date("2025-10-11") < new Date();
 const favIcon = dvm.src
 const metaData = {
   title: 'Designing for Cultural Inclusion',
-  description: 'CSS and Accessibility as Key Tools'
+  description: 'CSS and Accessibility as Key Tools',
+  image: 'og-image.png',
+  site: 'https://css-accessibility-cultural-inclusion-v2.pages.dev/devfest-milano-2025/',
 }
 ---
 
@@ -37,7 +39,7 @@ const metaData = {
     <Font />
     <UserPreferences />
     <Outro />
-    <Thanks meReloaded={me2} qrLink={qrLink} qrLinkRating={qrLinkRating} newQR urlLink="https://css-accessibility-cultural-inclusion-v2.pages.dev/devfest-milano-2025/" />
+    <Thanks meReloaded={me2} qrLink={qrLink} qrLinkRating={qrLinkRating} newQR urlLink={metaData.site} />
   )}
 </Layout>
 <style lang="scss" is:global>

@@ -22,7 +22,9 @@ const canRender = import.meta.env.DEV || new Date("2025-10-07") < new Date();
 const favIcon = bfe.src
 const metaData = {
   title: 'Designing for Cultural Inclusion',
-  description: 'CSS and Accessibility as Key Tools'
+  description: 'CSS and Accessibility as Key Tools',
+  image: 'og-image.png',
+  site: 'https://css-accessibility-cultural-inclusion-v2.pages.dev/bologna-front-end-2025/',
 }
 ---
 
@@ -40,6 +42,6 @@ const metaData = {
     <UniversalDesign />
     <UserPreferences />
     <Outro />
-    <Thanks qrLink={qrLink} qrLinkRating={qrLinkRating} newQR urlLink="https://css-accessibility-cultural-inclusion-v2.pages.dev/bologna-front-end-2025/" />
+    <Thanks qrLink={qrLink} qrLinkRating={qrLinkRating} newQR urlLink={metaData.site} />
   )}
 </Layout>
