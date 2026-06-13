@@ -4,6 +4,7 @@ import Layout from "../layouts/Layout.astro";
 import qrLinkRating from "../img/qrcode_rating_ws2026.png";
 import qrLink from "../img/qrcode_slide_ws2026.png";
 import refsFav from "../img/ws-icon.png";
+import AiResponse from "../slides/ai-response.astro";
 import Ai from "../slides/ai.astro";
 import CoverWs2026 from "../slides/cover-ws-2026.astro";
 import Cover from "../slides/cover.astro";
@@ -13,10 +14,12 @@ import ImplementationsBis from "../slides/implementations-bis.astro";
 import Implementations from "../slides/implementations.astro";
 import Intro from "../slides/intro.astro";
 import OtherWriting from "../slides/other-writing.astro";
+import OutroTakeaways from "../slides/outro-takeaways.astro";
 import Outro from "../slides/outro.astro";
 import ReadingWriting from "../slides/reading-writing.astro";
 import Thanks from "../slides/thanks.astro";
 import UniversalDesign from "../slides/universal-design.astro";
+import UserPreferencesExtra from "../slides/user-preferences-extra.astro";
 import UserPreferencesReloaded from "../slides/user-preferences-reloaded.astro";
 const canRender = import.meta.env.DEV || new Date("2026-06-19") < new Date();
 const favIcon = refsFav.src;
@@ -43,7 +46,10 @@ const metaData = {
         <Font />
         <UniversalDesign />
         <UserPreferencesReloaded />
+        <UserPreferencesExtra />
         <Ai />
+        <AiResponse />
+        <OutroTakeaways />
         <Outro />
         <Thanks
           qrLink={qrLink}
