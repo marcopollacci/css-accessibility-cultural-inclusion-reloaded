@@ -1,0 +1,25 @@
+<p-slide>
+  <h4 style="margin-block-end: 0.5em" class="center">AI Response 🤖</h4>
+  <pre
+    class="small-line"
+    data-label-file="response.md">
+ <code is:raw style="font-size: .65em" class="language-md">
+    ## Issues found
+
+    ❌ .header { margin-left: 1rem; }
+    ✅ .header { margin-inline-start: 1rem; }
+    → Why: breaks RTL layout for Arabic/Hebrew users
+
+    ❌ font-family: "Lobster"; /* always */
+    ✅ :lang(ar) { font-family: "Noto Sans Arabic", sans-serif; }
+    → Why: Latin fonts render Arabic as tofu (☐☐☐)
+
+    ❌ text-align: left;
+    ✅ text-align: start;
+    → Why: "left" is absolute, "start" follows writing direction
+</code>
+</pre>
+</p-slide>
+<p-slide class="cover center">
+  <h3 class="cover-all">AI as a reviewer, not a designer.</h3>
+</p-slide>
